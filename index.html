@@ -1,6 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <style>
+        /* Hide the content of the page initially */
+        #content {
+            display: none;
+        }
+
+        /* Center the input box and button */
+        #access {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="access">
+        <h2>Enter Access Code</h2>
+        <input type="password" id="codeInput" placeholder="Enter code">
+        <button onclick="checkCode()">Submit</button>
+        <p id="message"></p>
+    </div>
+
+    <div id="content">
+        
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta name="description" content="made by me :)">
@@ -589,5 +619,24 @@
     </script>
 
 <link rel="stylesheet" href="assets/css/css.css">
-  </body>
-</html>
+
+    </div>
+
+    <script>
+        // Function to check if the entered code is correct
+        function checkCode() {
+            var enteredCode = document.getElementById("codeInput").value;
+            var correctCode = "i love dogs"; // The correct code
+            var message = document.getElementById("message");
+
+            if (enteredCode.toLowerCase() === correctCode) {
+                // Show the content and hide the access div
+                document.getElementById("content").style.display = "block";
+                document.getElementById("access").style.display = "none";
+            } else {
+                // Show an error message
+                message.textContent = "Incorrect code, please try again.";
+                message.style.color = "red";
+            }
+        }
+    </script>

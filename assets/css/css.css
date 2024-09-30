@@ -5,12 +5,12 @@ body {
 
 }
 
-/* text-shadow: 0 0 10px #003cff, 0 0 20px #0066ff, 0 0 30px #0064e6, 0 0 40px #018fee, 0 0 50px #0191f1, 0 0 60px #0099ff, 0 0 70px #0099ff; */
+/* text-shadow: 0 0 10px #FFD1DC, 0 0 20px #FFD1DC, 0 0 30px #FFD1DC, 0 0 40px #018fee, 0 0 50px #0191f1, 0 0 60px #0099ff, 0 0 70px #0099ff; */
 
 
 h1 {
   color: #000000;
-  text-shadow: 0 0 10px #003cff, 0 0 20px #0066ff, 0 0 30px #0064e6;
+  text-shadow: 0 0 10px #FFD1DC, 0 0 20px #FFD1DC, 0 0 30px #FFD1DC;
 
 
 }
@@ -18,7 +18,7 @@ h1 {
 p {
   font-size: 25px;
   color: #000000;
-  text-shadow: 0 0 10px #003cff, 0 0 20px #0066ff, 0 0 30px #0064e6;
+  text-shadow: 0 0 10px #FFD1DC, 0 0 20px #FFD1DC, 0 0 30px #FFD1DC;
 
   
 

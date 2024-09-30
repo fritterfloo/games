@@ -93,12 +93,12 @@ a:hover {
 @keyframes flicker {
     from {
       text-shadow:
-      0 0 5px blue,0 0 10px blue,
-      0 0 20px blue, 0 0 40px blue;
+      0 0 5px pink,0 0 10px pink,
+      0 0 20px pink, 0 0 40px pink;
     }
     to {
       text-shadow:
-      0 0 5px blue, 0 0 10px blue,
+      0 0 5px pink, 0 0 10px pink,
       0 0 20px rgb(0, 183, 255), 0 0 40px rgb(0, 162, 255);
     }
   }
@@ -150,7 +150,7 @@ a:hover {
 /* Callout header */
 .callout-header {
   padding: 5px 10px;
-  background: #000436;
+  background: #FFD1DC;
   font-size: 30px;
   color: white;
   border-style: solid;
@@ -163,7 +163,7 @@ a:hover {
   background-color: #000000;
   color: lime;
   border-style: solid;
-  border-color: #000436;
+  border-color: #FFD1DC;
 }
 
 /* Close button */

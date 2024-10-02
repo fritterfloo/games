@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Hidden Content Example</title>
     <style>
-        /* Hide the content of the page initially */
-        #content {
-            display: none;
+        #hidden-content {
+            display: none; /* Initially hidden */
         }
-
-        /* Center the input box and button */
-        #access {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        #message {
+            color: red; /* Error message color */
         }
     </style>
 </head>
 <body>
+    <h1>Enter the password to reveal the hidden content:</h1>
 
-    <div id="access">
-        <h2>Enter Access Code</h2>
-        <input type="password" id="codeInput" placeholder="Enter code">
-        <button onclick="checkCode()">Submit</button>
-        <p id="message"></p>
-    </div>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
 
-    <div id="content">
+    <p id="message"></p>
+
+    <div id="hidden-content">
+     
         
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -622,21 +615,23 @@
 
     </div>
 
-    <script>
-        // Function to check if the entered code is correct
-        function checkCode() {
-            var enteredCode = document.getElementById("codeInput").value;
-            var correctCode = "i love dogs"; // The correct code
-            var message = document.getElementById("message");
 
-            if (enteredCode.toLowerCase() === correctCode) {
-                // Show the content and hide the access div
-                document.getElementById("content").style.display = "block";
-                document.getElementById("access").style.display = "none";
+    <script>
+        // Store the password as an obfuscated string
+        const obfuscatedPassword = "frienDs"; // Simple obfuscation (mixed case)
+
+        function checkPassword() {
+            const userInput = document.getElementById('password').value;
+
+            // Compare the input against the obfuscated password
+            if (userInput === obfuscatedPassword) {
+                document.getElementById('hidden-content').style.display = 'block'; // Show hidden content
+                document.getElementById('message').textContent = 'Password correct! Content revealed.';
+                document.getElementById('message').style.color = 'green';
             } else {
-                // Show an error message
-                message.textContent = "Access Denied.";
-                message.style.color = "red";
+                document.getElementById('message').textContent = 'Incorrect password. Try again.';
             }
         }
     </script>
+</body>
+</html>

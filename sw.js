@@ -4,6 +4,7 @@ var urlsToCache = [
     'index.html',
     'secret.html',
     'update.html',
+    'assets/img/download__1_-removebg-preview.png',
     'assets/img/logo-192.png',
     'assets/img/logo-512.png',
     'assets/img/logo.png',

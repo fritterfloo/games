@@ -1,0 +1,26 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+       a {
+            color: #d400ff;                  /* Text color */
+            font-size: small;                /* Font size */
+            background-color: #f0f0f0;       /* Box background color */
+            text-decoration: none;           /* Removes underline from the link */
+            display: inline-block;           /* Makes the link behave like a block element */
+            border: 2px solid #4400ff;       /* Border color and width */
+            padding: 10px;                   /* Adds space inside the box */
+            width: 150px;                    /* Set a specific width for the box */
+            text-align: center;              /* Center text inside the box */
+            margin: 5px;                    /* Space between boxes */
+            border-radius: 5px;              /* Optional: adds rounded corners */
+        }
+
+        a:hover {
+            background-color: #d4d4d4;       /* Change background color on hover */
+        }
+
+h1{
+  text-align: center;
+}

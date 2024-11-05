@@ -1,17 +1,8 @@
-var CACHE_NAME = 'version25'; // bump this version when you make changes.
+var CACHE_NAME = 'version26'; // bump this version when you make changes.
 // Put all your urls that you want to cache in this array
 var urlsToCache = [
     'index.html',
-    'secret.html',
     'update.html',
-    'assets/img/download__1_-removebg-preview.png',
-    'assets/img/logo-192.png',
-    'assets/img/logo-512.png',
-    'assets/img/logo.png',
-    'assets/img/oldLogo.png',
-    'assets/img/favicon.ico',
-    'assets/css/css.css',
-    'assets/css/spin.css',
     'games/1v1lol',
     'games/10-minutes-till-dawn',
     'games/99balls',
